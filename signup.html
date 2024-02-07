@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+    <title>إنشاء حساب</title>
+</head>
+<body>
+    <h2>إنشاء حساب جديد</h2>
+    <form action="signup.php" method="POST">
+        <div>
+            <label for="username">اسم المستخدم:</label>
+            <input type="text" id="username" name="username" required pattern="[A-Za-z0-9]{5,10}" title="يجب أن يحتوي اسم المستخدم على أحرف إنجليزية وأرقام وأن يكون طوله بين 5 و 10 أحرف">
+        </div>
+        <div>
+            <label for="email">البريد الإلكتروني:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="password">كلمة المرور:</label>
+            <input type="password" id="password" name="password" required pattern=".{8,}" title="يجب أن تحتوي كلمة المرور على 8 أحرف على الأقل">
+        </div>
+        <button type="submit">إنشاء الحساب</button>
+    </form>
+</body>
+</html>
